@@ -1,0 +1,7 @@
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+venv
+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

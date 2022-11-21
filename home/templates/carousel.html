@@ -1,0 +1,59 @@
+{% load static %}
+<div class="container-fluid">
+<div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner" style="height: 70vh;">
+      <div class="carousel-item h-100 active" data-bs-interval="10000">
+        <img src="{% static '' %}img/cloth 1.jpg" class="d-block w-100 h-100" alt="...">
+        <div class="like"></div>
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="title-text mb-1" style="color:crimson;">Best Round Necks Quality</h1>
+          <p class="title-text mb-5" style="color:white; margin-bottom:7rem;">Select your choice new brand.</p>
+        </div>
+        {% comment %} background: linear-gradient(135deg, #6413e8, #ff0000);  {% endcomment %}
+      </div>
+    <div class="carousel-item  h-100" data-bs-interval="2000">
+        <img src="{% static '' %}img/perfume 1.jpg" class="d-block w-100  h-100" alt="...">
+        <div class="like"></div>
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="title-text mb-1" style="color:crimson;">Perfume Original From UK</h1>
+          <p  class="title-text mb-5" style="color:white;">Very Nice Odor Smile Good.</p>
+        </div>
+      </div>
+      <div class="carousel-item  h-100">
+        <img src="{% static '' %}img/bag 1.jpg" class="d-block w-100  h-100" alt="...">
+        <div class="like"></div>
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="title-text mb-1" style="color:crimson;">Leader Bags Very Good Product</h1>
+          <p  class="title-text mb-5" style="color:white;">Back Bags for Laptop & for Travels</p>
+        </div>
+      </div>
+      <div class="carousel-item  h-100">
+        <img src="{% static '' %}img/shoe 1.jpg" class="d-block w-100  h-100" alt="...">
+        <div class="like"></div>
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="title-text mb-1" style="color:crimson;">Nike Men's Shoes Best Quality </h1>
+          <p  class="title-text mb-5" style="color:white; margin-bottom:7rem;">Sport Wear Shoes and for Running.</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>     
+   </div>
+  </div>
+</div>
+</div>
+    

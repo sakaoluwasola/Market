@@ -1,0 +1,39 @@
+
+{% extends 'base.html' %}
+{% block title%}  Categories   {% endblock title%}
+{% block header %}  {% include 'header.html' %}    {% endblock header %}
+
+{% block carousel %}   {% include 'carousel.html' %}     {% endblock carousel %}
+
+{% block content %}
+
+<section id="categories-section" style="background:navy;">
+<div class="container">
+    <h2 class="text-center text-capitalize latest mt-5 mb-5">All Categories</h2>
+    <div class="row gy-3 justify-content-center w-100">
+      {% if categories %}
+        {% for items in categories %}
+          <div class="col-10 col-sm-10 col-md-6 col-lg-3 col-xl-3 col-xl-3">
+            <div class="card mb-5">
+              <img src="{{items.img.url}}" class="card-img-top imgg" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{items.title}}</h5>
+                <p class="card-text">SHENGSHI Anti Theft Laptop Bag Travel Backpack Black And Others.</p>
+                <h6 class="card-text">&#8358; 6,500</h6>
+                <a href="#" class="btn btn-primary">Add To Cart</a>
+              </div>
+            </div>
+          </div>
+        {% endfor %}  
+      {% endif %}
+    </div>
+  </div> 
+</section>   
+    
+  {% endblock content %}
+
+ 
+ {% block footer %}  {% include 'footer.html' %}  {% endblock footer %}
+  
+ 
+  
